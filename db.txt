@@ -1,0 +1,34 @@
+MongodB - document database - JSON -> BSON
+
+use db 
+db.createcollection("profile")
+
+now to insert the documents use insertone({
+    data here
+})
+
+querying the documents - find() findOne()
+these two methods take two arguments -> 
+filter if you want a particular filter and then the  projection- this describes what fields to include to the search results
+
+
+updating the content -> updateOne() updateMany()
+eg -> dp.posts({title : "this is a default post" }, {$set : {likes : 2}})
+
+set operator -> $set
+
+this also takes many paramenters adjust accordingly
+
+delete -> deleteOne() deleteMany()
+
+many operatrs eg - $eq (equal) $gt etc
+
+Aggregation piplines ->
+Aggregation operations allow you to group, sort, perform calculations, analyze data, and much more.
+
+Aggregation pipelines can have one or more "stages". The order of these stages are important. Each stage acts upon the results of the previous stage.
+
+schema validation
+
+ideixing and searching
+
